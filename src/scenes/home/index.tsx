@@ -38,8 +38,9 @@ const Home = ({ setSelectedPage }: Props) => {
             }}
           >
             <div className="relative">
-              <div className="before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-evolvetext">
-                <img alt="home-page-text" src={HomePageText} />
+              <div className="">
+                {/* <img alt="home-page-text" src={HomePageText} /> */}
+                <h1>heading Lorem ipsum, </h1>
               </div>
             </div>
 
@@ -63,15 +64,8 @@ const Home = ({ setSelectedPage }: Props) => {
             }}
           >
             <ActionButton setSelectedPage={setSelectedPage}>
-              Join Now
+              Buy Now
             </ActionButton>
-            <AnchorLink
-              className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
-              onClick={() => setSelectedPage(SelectedPage.ContactUs)}
-              href={`#${SelectedPage.ContactUs}`}
-            >
-              <p>Learn More</p>
-            </AnchorLink>
           </motion.div>
         </div>
 
